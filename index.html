@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    #product-grid{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    #product-grid .tile{
+        width: calc(90vw/3);
+        height: 356px;
+        background-color: #f5f5f5;
+        margin: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #product-grid .tile img {
+        max-width: 292px;
+        max-height: 292px;
+    }
+    @media screen and (max-width: 760px) {
+        #product-grid .tile{
+        width: 98vw;
+        height: 356px;
+    }
+    #product-grid .tile img {
+        max-width: 80vw;
+        max-height: 64vh;
+    }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 959px){
+        #product-grid .tile{
+        width: calc(90vw/2);
+        height: 356px;
+    }
+    #product-grid .tile img {
+        max-width: 80vw;
+        max-height: 64vh;
+    }
+    }
+</style>
+<section id="product-grid">
+        <div class="tile">
+            <img src="./assets/tio.png" alt="">
+        </div>
+        <div class="tile">
+            <img src="./assets/tit.png" alt="">
+        </div>
+        
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile">
+            <img src="./assets/tis.png" alt="">
+        </div>
+</section>
